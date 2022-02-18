@@ -48,7 +48,7 @@ public class update_user extends AppCompatActivity {
             NPK.setText(cursor.getString(1).toString());
             Username.setText(cursor.getString(2).toString());
             Password.setText(cursor.getString(3).toString());
-            RFIDTag.setText(cursor.getString(4).toString());
+            RFIDTag.setText(cursor.getBlob(4).toString());
             Nama.setText(cursor.getString(5).toString());
             OpSkill.setText(cursor.getString(8).toString());
             Usergroup.setSelection(cursor.getInt(6));
