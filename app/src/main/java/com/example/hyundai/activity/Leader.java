@@ -76,6 +76,14 @@ public class Leader extends AppCompatActivity {
             startActivity(intent);
         });
 
+        CardView card2 = findViewById(R.id.card2);
+        card2.setOnClickListener(view -> {
+            Intent intent = new Intent(Leader.this, MainActivity.class);
+            intent.putExtra(NPK, GNPK);
+            intent.putExtra(TRIAL, GTRIAL);
+            startActivity(intent);
+        });
+
 
 
         fab = (FloatingActionButton) findViewById(R.id.floatingActionButton);
